@@ -1,6 +1,5 @@
 import { defineNuxtConfig } from 'nuxt/config'
 
-// Подтягивает шрифты, но не UI компоненты
 /*export default defineNuxtConfig({
   css: ['vuetify/lib/styles/main.sass'],
   build: {
@@ -14,7 +13,6 @@ import { defineNuxtConfig } from 'nuxt/config'
 })*/
 
 
-// Подтягивает цвета, но не UI компоненты
 export default defineNuxtConfig({
     css: [
         'primevue/resources/themes/bootstrap4-light-blue/theme.css',

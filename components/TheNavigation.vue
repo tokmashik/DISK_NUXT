@@ -12,9 +12,10 @@
         <NuxtLink to="/second">Second</NuxtLink>
       </li>
       <li>
-        <NuxtLink to="/about">About</NuxtLink>
+        <NuxtLink to="/dictionary">Словарь</NuxtLink>
       </li>
-    </ul>
+      
+    </ul><Chip label="Amy Elsner" image="/images/avatar/amyelsner.png" />
   </div>
   
   </div>
