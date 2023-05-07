@@ -1,24 +1,60 @@
 <template>
-  <div>
-    <div class="grid">
-        <div class="col-5 flex align-items-center justify-content-center">
-            <div class="p-fluid">
-                <div class="field">
-                    <label for="username">Username</label>
-                    <InputText id="username" type="text" />
-                </div>
-                <div class="field">
-                    <label for="password" >Password</label>
-                    <InputText id="password" type="password" />
-                </div>
-                <Button label="Login"></Button>
-                <Button label="Sign Up" icon="pi pi-user-plus" class="p-button-success"></Button>
-                </div>
-        </div>   
+
+
+<TheReg />
+
+<v-layout>
+     <!-- <v-app-bar>
+        <div style="display: flex; align-items: center; justify-content: space-between;">
+
+        
+        <div>
+          <NuxtLink to="/">DISK</NuxtLink>
+        </div>
+        <div>
+
+        
+        <ul>
+      <li>
+        <NuxtLink to="/">Home</NuxtLink>
+      </li>
+      <li>
+        <NuxtLink to="/login">login</NuxtLink>
+      </li>
+      <li>
+        <NuxtLink to="/register">register</NuxtLink>
+      </li>
+      <v-btn @click="toggleTheme">change theme</v-btn>
+    </ul>
+      
     </div>
-</div>
+  
+  </div>
+      </v-app-bar>-->
+    </v-layout>
+
+    <h3></h3>
+    <NuxtLink to="/admin">admin</NuxtLink>
+    <NuxtLink to="/user">user</NuxtLink>
+    
 </template>
+
 
 <script>
 
+import register from './register.vue';
+
+import { useTheme } from 'vuetify'
+
+/*export default {
+  setup () {
+    const theme = useTheme()
+
+    return {
+      theme,
+      toggleTheme: () => theme.global.name.value = theme.global.current.value.dark ? 'dark' : 'light'
+    }
+  }
+}*/
 </script>
+

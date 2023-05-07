@@ -1,22 +1,14 @@
 <template>
-    <NuxtLayout :name="layout">
-        <TheNavigation />
-        <div class="app">
-  <TheNavigation />
-  <div class="container">
-      <NuxtPage />
-  </div>
+      <div>
+         <NuxtPage />
+        <!--<slot />-->
+      </div>
 
-  </div>
-
-    </NuxtLayout>
-  </template>
+      
+    
+</template>
 
 
-  <script setup>
-  // You might choose this based on an API call or logged-in status
-  const layout = "custom";
-  </script>
 
   <style>
 .container {

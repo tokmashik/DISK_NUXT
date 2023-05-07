@@ -1,23 +1,20 @@
 <!-- Please remove this file from your project -->
 <template>
   <div class="cont">
-<div class="nav">
-  <NuxtLink to="/">DISK</NuxtLink>
-
-    <ul>
-      <li>
-        <NuxtLink to="/">Home</NuxtLink>
-      </li>
-      <li>
-        <NuxtLink to="/second">Second</NuxtLink>
-      </li>
-      <li>
-        <NuxtLink to="/dictionary">Словарь</NuxtLink>
-      </li>
-      
-    </ul><Chip label="Amy Elsner" image="/images/avatar/amyelsner.png" />
-  </div>
-  
+    <div class="nav">
+      <NuxtLink to="/">DISK</NuxtLink>
+        <ul>
+          <li>
+            <NuxtLink to="/">Home</NuxtLink>
+          </li>
+          <li>
+            <NuxtLink to="/second">Second</NuxtLink>
+          </li>
+          <li>
+            <NuxtLink to="/dictionary">Словарь</NuxtLink>
+          </li>
+        </ul>
+    </div>
   </div>
 </template>
 
