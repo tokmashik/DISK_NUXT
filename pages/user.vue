@@ -1,10 +1,5 @@
 <template>
-
-<h2>fgf</h2>
-<h2>fgf</h2>
-<h2>fgf</h2>
-<h2>fgf</h2>
-
+    <TheTest />
 </template>
 
 <script setup>

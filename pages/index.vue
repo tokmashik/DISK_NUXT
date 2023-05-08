@@ -1,42 +1,15 @@
 <template>
-
-
-<TheReg />
-
-<v-layout>
-     <!-- <v-app-bar>
-        <div style="display: flex; align-items: center; justify-content: space-between;">
-
-        
+  <v-app id="inspire">
+    <v-main class="bg-grey-lighten-3">
+      <v-container>
         <div>
-          <NuxtLink to="/">DISK</NuxtLink>
+          <TheReg />
         </div>
-        <div>
-
-        
-        <ul>
-      <li>
-        <NuxtLink to="/">Home</NuxtLink>
-      </li>
-      <li>
-        <NuxtLink to="/login">login</NuxtLink>
-      </li>
-      <li>
-        <NuxtLink to="/register">register</NuxtLink>
-      </li>
-      <v-btn @click="toggleTheme">change theme</v-btn>
-    </ul>
-      
-    </div>
-  
-  </div>
-      </v-app-bar>-->
-    </v-layout>
-
-    <h3></h3>
-    <NuxtLink to="/admin">admin</NuxtLink>
-    <NuxtLink to="/user">user</NuxtLink>
-    
+        <NuxtLink to="/admin">admin</NuxtLink>
+        <NuxtLink to="/user">user</NuxtLink>
+      </v-container>
+    </v-main>
+  </v-app>
 </template>
 
 
@@ -46,6 +19,14 @@ import register from './register.vue';
 
 import { useTheme } from 'vuetify'
 
+const axios = useNuxtApp().$axios
+
+onMounted(() => {
+  axios.get('/api/ts').then((responce) => {
+    console.log('responce:', responce)
+
+  })
+})
 /*export default {
   setup () {
     const theme = useTheme()

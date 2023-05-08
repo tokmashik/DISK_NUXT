@@ -1,5 +1,5 @@
 <template>
-<TheReg />
+    <TheReg />
 </template>
 
 <script setup>

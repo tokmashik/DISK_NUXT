@@ -1,19 +1,12 @@
 <template>
-      <div>
-         <NuxtPage />
-        <!--<slot />-->
-      </div>
-
-      
-    
+  <v-app id="inspire">
+    <v-main class="bg-grey-lighten-3">
+      <v-container>
+        <div>
+          <NuxtPage />
+        </div>
+      </v-container>
+    </v-main>
+  </v-app>
 </template>
 
-
-
-  <style>
-.container {
-  margin: 60px auto 0;
-  padding: 1rem;
-  min-width: 960px;
-}
-</style>

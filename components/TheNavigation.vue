@@ -1,4 +1,3 @@
-<!-- Please remove this file from your project -->
 <template>
   <div class="cont">
     <div class="nav">
@@ -14,7 +13,7 @@
             <NuxtLink to="/dictionary">Словарь</NuxtLink>
           </li>
         </ul>
-    </div>
+      </div>
   </div>
 </template>
 
