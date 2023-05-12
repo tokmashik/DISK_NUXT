@@ -4,7 +4,13 @@ import vuetify from 'vite-plugin-vuetify'
 
 export default defineNuxtConfig({
   modules: [
-    "@nuxtjs/google-fonts"
+    "@nuxtjs/google-fonts",
+    '@nuxtjs/axios',
+    /*async (options, nuxt) => {
+      nuxt.hooks.hook('vite:extendConfig', config => config.plugins.push(
+        vuetify()
+      ))
+    }*/
   ],
   css: ['vuetify/lib/styles/main.sass',
         '@mdi/font/css/materialdesignicons.css',

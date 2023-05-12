@@ -12,10 +12,10 @@
                 hint="Минимум 8 символов" counter @click:append="show1 = !show1" variant="underlined"></v-text-field>
 
             <!--<v-text-field v-model="password" color="primary" label="Пароль" placeholder="Enter your password"
-                variant="underlined"></v-text-field>-->
+                variant="underlined"></v-text-field>
 
             <v-checkbox v-model="terms" color="deep-purple-darken-2"
-                label="I agree to site terms and conditions"></v-checkbox>
+                label="I agree to site terms and conditions"></v-checkbox>-->
 
             <p>Уже зарегистрированны в системе?</p>
             <NuxtLink to="/login">Войти</NuxtLink>
@@ -34,7 +34,22 @@
 </template>
 
 <script>
+import axios from "axios";
 export default {
+
+    created() {
+      this.load()
+      // this.getOne()
+      },
+      methods: {
+      load(){
+      // new td = new Transport()
+      axios.get(`${server.baseURL}/compliet-cargo/TS`).then(data => (this.ts = data.data))
+      console.log(ts)
+      },
+    },
+
+
     data: () => ({
         first: null,
         last: null,

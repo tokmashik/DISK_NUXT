@@ -7,7 +7,7 @@
                 <ul>
                     <li>
                         <v-tab>
-                            <NuxtLink to="/">Home</NuxtLink>
+                            <NuxtLink to="/test">Test</NuxtLink>
                         </v-tab>
                     </li>
                     <li>

@@ -1,5 +1,4 @@
 <template>
-    <NuxtPage />
     <v-card class="mx-auto" max-width="400" title="Войти в аккаунт">
         <v-container>
             <v-text-field v-model="first" color="primary" label="Имя" variant="underlined"></v-text-field>
@@ -7,7 +6,7 @@
             <v-text-field v-model="last" color="primary" label="Фамилия" variant="underlined"></v-text-field>
 
             <v-text-field v-model="email" color="primary" label="Email" variant="underlined"></v-text-field>
-            
+
             <v-text-field v-model="password" :append-icon="show1 ? 'mdi-eye' : 'mdi-eye-off'"
                 :rules="[rules.required, rules.min]" :type="show1 ? 'text' : 'password'" name="input-10-1" label="Пароль"
                 hint="Минимум 8 символов" counter @click:append="show1 = !show1" variant="underlined"></v-text-field>
