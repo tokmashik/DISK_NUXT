@@ -34,22 +34,7 @@
 </template>
 
 <script>
-import axios from "axios";
 export default {
-
-    created() {
-      this.load()
-      // this.getOne()
-      },
-      methods: {
-      load(){
-      // new td = new Transport()
-      axios.get(`${server.baseURL}/compliet-cargo/TS`).then(data => (this.ts = data.data))
-      console.log(ts)
-      },
-    },
-
-
     data: () => ({
         first: null,
         last: null,
@@ -71,4 +56,16 @@ export default {
         }
     },
 }
+    /*created() {
+      this.load()
+      // this.getOne()
+      },
+      methods: {
+      load(){
+      // new td = new Transport()
+      axios.get(`${server.baseURL}/compliet-cargo/TS`).then(data => (this.ts = data.data))
+      console.log(ts)
+      },
+    },
+*/
 </script>

@@ -14,19 +14,7 @@
 
 
 <script>
-
-import register from './register.vue';
-
 import { useTheme } from 'vuetify'
-
-const axios = useNuxtApp().$axios
-
-onMounted(() => {
-  axios.get('/api/ts').then((responce) => {
-    console.log('responce:', responce)
-
-  })
-})
 /*export default {
   setup () {
     const theme = useTheme()

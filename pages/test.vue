@@ -1,5 +1,5 @@
 <template>
-    <TheTest />
+    <TheStartTest />
 </template>
 
 <script setup>

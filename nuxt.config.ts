@@ -3,10 +3,18 @@
 import vuetify from 'vite-plugin-vuetify'
 
 export default defineNuxtConfig({
+  app: {
+    head: {
+      title: 'DISK',
+      meta: [
+        { name: '', content: '' }
+      ],
+    }
+  },
   modules: [
     "@nuxtjs/google-fonts",
-    '@nuxtjs/axios',
-    /*async (options, nuxt) => {
+    /*'@nuxtjs/axios',
+    async (options, nuxt) => {
       nuxt.hooks.hook('vite:extendConfig', config => config.plugins.push(
         vuetify()
       ))

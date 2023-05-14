@@ -36,7 +36,4 @@
 </template>
     
 <script>
-
-
-
 </script>
