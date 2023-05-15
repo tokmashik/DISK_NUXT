@@ -1,8 +1,10 @@
 <template>
-    <div>
-        <h3>Система DISC: характеристика типов личности</h3>
-        <v-btn><NuxtLink to="/test">Начать тестирование</NuxtLink></v-btn>
-        
+    <div class="start_test">
+        <h2 style="margin-bottom: 20px">Система DISC: характеристика типов личности</h2>
+        <NuxtLink to="/disk_test"><v-btn>Начать тестирование</v-btn></NuxtLink>
+        <h3>Тестирование проходит в два этапа:</h3>
+        <h3>Первый этап 28 вопросов</h3>
+        <h3>Второй этап 4 вопроса</h3>
     </div>
   </template>
 

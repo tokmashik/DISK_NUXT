@@ -12,10 +12,7 @@
                 hint="Минимум 8 символов" counter @click:append="show1 = !show1" variant="underlined"></v-text-field>
 
             <!--<v-text-field v-model="password" color="primary" label="Пароль" placeholder="Enter your password"
-                variant="underlined"></v-text-field>
-
-            <v-checkbox v-model="terms" color="deep-purple-darken-2"
-                label="I agree to site terms and conditions"></v-checkbox>-->
+                variant="underlined"></v-text-field>-->
 
             <p>Уже зарегистрированны в системе?</p>
             <NuxtLink to="/login">Войти</NuxtLink>
@@ -25,7 +22,7 @@
 
         <v-card-actions>
             <v-spacer></v-spacer>
-            <v-btn color="deep-purple-darken-2">
+            <v-btn @submit.prevent="submit"  color="deep-purple-darken-2">
                 Зарегистрироваться
                 <v-icon icon="mdi-chevron-right" end></v-icon>
             </v-btn>
@@ -35,13 +32,18 @@
 
 <script>
 export default {
-    data: () => ({
-        first: null,
-        last: null,
-        email: null,
-        password: null,
-        terms: false,
-    }),
+    setup() {
+        const data = reactive({
+        first: '',
+        last: '',
+        email: '',
+        password: '',
+        });
+        const submit = () => {
+            console.log(123);
+        }
+        
+    },
 
     data() {
         return {

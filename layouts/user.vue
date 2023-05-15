@@ -1,24 +1,30 @@
 <template>
     <v-app id="inspire">
-        <v-app-bar class="px-3" color="white" flat density="compact">
-            <NuxtLink to="/">DISK</NuxtLink>
+        <v-app-bar class="px-8" color="white" flat density="compact">
+            <NuxtLink class="DISK" to="/">DISK</NuxtLink>
             <v-spacer></v-spacer>
             <v-tabs centered color="grey-darken-2">
                 <ul>
                     <li>
-                        <v-tab>
-                            <NuxtLink to="/test">Test</NuxtLink>
-                        </v-tab>
+                        <NuxtLink to="/test">
+                            <v-tab>
+                                Test
+                            </v-tab>
+                        </NuxtLink>
                     </li>
                     <li>
-                        <v-tab>
-                            <NuxtLink to="/second">Second</NuxtLink>
-                        </v-tab>
+                        <NuxtLink to="/second">
+                            <v-tab>
+                                Second
+                            </v-tab>
+                        </NuxtLink>
                     </li>
                     <li>
-                        <v-tab>
-                            <NuxtLink to="/dictionary">Словарь</NuxtLink>
-                        </v-tab>
+                        <NuxtLink to="/dictionary">
+                            <v-tab>
+                                Словарь
+                            </v-tab>
+                        </NuxtLink>
                     </li>
                 </ul>
             </v-tabs>

@@ -1,7 +1,7 @@
 <template>
   <v-app id="inspire">
-    <v-app-bar class="px-3" color="white" flat density="compact">
-      <NuxtLink to="/">DISK</NuxtLink>
+    <v-app-bar class="px-8" color="white" flat density="compact">
+      <NuxtLink class="DISK" to="/">DISK</NuxtLink>
       <v-spacer></v-spacer>
 
       <v-tabs centered color="grey-darken-2">
