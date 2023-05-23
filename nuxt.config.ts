@@ -42,20 +42,7 @@ export default defineNuxtConfig({
 })
 
 
-/*export default defineNuxtConfig({
-    css: [
-        'primevue/resources/themes/bootstrap4-light-blue/theme.css',
-        'primevue/resources/primevue.min.css',
-        'primevue/resources/primevue.css',
-        'primeicons/primeicons.css',
-        'primeflex/primeflex.css',
-    ],    
-    build: {
-        transpile: ['primevue']
-    }
-})
-
-
+/*
 vite: {
     define: {
       'process.env.DEBUG': false,
@@ -72,3 +59,28 @@ vite: {
     }
   ],
   */
+
+  /*axios: {
+    baseURL: 'http://localhost:5001/', 
+  },
+
+  auth: {
+    strategies: {
+      local: {
+        token: {
+          property: 'access_token',
+          required: true,
+          type: 'Bearer'
+        },
+        user: {
+          property: false, 
+          autoFetch: true
+        },
+        endpoints: {
+          login: { url: '/auth/login', method: 'post' },
+          logout: { url: '/auth/logout', method: 'post' },
+          user: { url: '/user', method: 'get' }
+        }
+      }
+    } 
+  },*/

@@ -22,10 +22,12 @@
 
         <v-card-actions>
             <v-spacer></v-spacer>
+            <NuxtLink to="/login">
             <v-btn @submit.prevent="submit"  color="deep-purple-darken-2">
                 Зарегистрироваться
                 <v-icon icon="mdi-chevron-right" end></v-icon>
             </v-btn>
+            </NuxtLink>
         </v-card-actions>
     </v-card>
 </template>
