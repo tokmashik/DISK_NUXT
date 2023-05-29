@@ -11,8 +11,24 @@ export default defineNuxtConfig({
       ],
     }
   },
+  /*routeRules: {
+    // Homepage pre-rendered at build time
+    '/': { prerender: true },
+    // Product page generated on-demand, revalidates in background
+    '/products/**': { swr: true },
+    // Blog post generated on-demand once until next deploy
+    '/blog/**': { isr: true },
+    // Admin dashboard renders only on client-side
+    '/admin/**': { ssr: false },
+    // Add cors headers on API routes
+    '/api/**': { cors: true },
+    // Redirects legacy urls
+    '/old-page': { redirect: '/new-page' }
+  },*/
   modules: [
     "@nuxtjs/google-fonts",
+    '@sidebase/nuxt-auth',
+
     /*'@nuxtjs/axios',
     async (options, nuxt) => {
       nuxt.hooks.hook('vite:extendConfig', config => config.plugins.push(
@@ -20,10 +36,13 @@ export default defineNuxtConfig({
       ))
     }*/
   ],
+ /* auth: {
+    enableGlobalAppMiddleware: true
+  },*/
   css: ['vuetify/lib/styles/main.sass',
-        '@mdi/font/css/materialdesignicons.css',
-        '@/assets/settings.scss',
-        '~/assets/css/main.css'],
+    '@mdi/font/css/materialdesignicons.css',
+    '@/assets/settings.scss',
+    '~/assets/css/main.css'],
   build: {
     transpile: ['vuetify'],
   },
@@ -34,7 +53,7 @@ export default defineNuxtConfig({
   },
   googleFonts: {
     families: {
-      Poppins: [100,200,300,400, 500, 600, 700, 800, 900]
+      Poppins: [100, 200, 300, 400, 500, 600, 700, 800, 900]
     },
     download: false,
     useStylesheet: true,
@@ -60,27 +79,27 @@ vite: {
   ],
   */
 
-  /*axios: {
-    baseURL: 'http://localhost:5001/', 
-  },
+/*axios: {
+  baseURL: 'http://localhost:5001/', 
+},
 
-  auth: {
-    strategies: {
-      local: {
-        token: {
-          property: 'access_token',
-          required: true,
-          type: 'Bearer'
-        },
-        user: {
-          property: false, 
-          autoFetch: true
-        },
-        endpoints: {
-          login: { url: '/auth/login', method: 'post' },
-          logout: { url: '/auth/logout', method: 'post' },
-          user: { url: '/user', method: 'get' }
-        }
+auth: {
+  strategies: {
+    local: {
+      token: {
+        property: 'access_token',
+        required: true,
+        type: 'Bearer'
+      },
+      user: {
+        property: false, 
+        autoFetch: true
+      },
+      endpoints: {
+        login: { url: '/auth/login', method: 'post' },
+        logout: { url: '/auth/logout', method: 'post' },
+        user: { url: '/user', method: 'get' }
       }
-    } 
-  },*/
+    }
+  } 
+},*/

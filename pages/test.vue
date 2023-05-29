@@ -4,6 +4,10 @@
 
 <script setup>
 definePageMeta({
-    layout: "user"
+    pageTransition: {
+    name: 'rotate'
+  },
+    layout: "user",
+    middleware: "auth"
 })
 </script>

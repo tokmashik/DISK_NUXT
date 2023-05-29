@@ -29,7 +29,8 @@
                 </ul>
             </v-tabs>
             <v-spacer></v-spacer>
-            <v-avatar class="hidden-sm-and-down" color="grey-darken-1" size="32"></v-avatar>
+                 
+                <v-avatar class="hidden-sm-and-down" color="grey-darken-1" size="32"></v-avatar>        
         </v-app-bar>
         <v-main class="bg-grey-lighten-3">
             <v-container class="d-flex justify-center align-center text-h5" style="min-height: 300px;">
@@ -41,5 +42,6 @@
     </v-app>
 </template>
     
-<script>
+<script setup>
+
 </script>

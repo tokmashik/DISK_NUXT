@@ -5,17 +5,14 @@
                 <!--<span v-for="question in questions2" :key="question.id">ID: {{ question.id }} => {{ question.testId }} => {{ question.text }}</span>-->
                 <h3 v-for="question in questions2" :key="question.id"> {{ question.text }}
                 </h3>
-                
+
                 <span class="question">{{ getCurrentQuestion.question }}</span>
             </div>
-                <v-radio-group
-      v-model="inline"
-      inline
-    >>
-                    <v-radio label="Согласен" value="1"></v-radio>
-                    <v-radio label="Не согласен" value="2"></v-radio>
-                    <v-radio label="Не знаю" value="3"></v-radio>                   
-                </v-radio-group>
+            <v-radio-group v-model="inline" inline>>
+                <v-radio label="Согласен" value="1"></v-radio>
+                <v-radio label="Не согласен" value="2"></v-radio>
+                <v-radio label="Не знаю" value="3"></v-radio>
+            </v-radio-group>
             <div class="options">
                 <label v-for="(option, index) in getCurrentQuestion.options" :key="index" :for="'option' + index" :class="`option ${getCurrentQuestion.selected == index
                     ? index == getCurrentQuestion.order
@@ -29,10 +26,10 @@
                     }`">
                     <div class="form-radio-hidden">
                         <div style="display:flex">
-                                <input type="radio" :id="'option' + index" :name="getCurrentQuestion.index" :value="index"
-                                    v-model="getCurrentQuestion.selected" @change="SetAnswer" />
-                                <span class="radio"></span><span class="text">{{ option }}</span>
-                            </div>
+                            <input type="radio" :id="'option' + index" :name="getCurrentQuestion.index" :value="index"
+                                v-model="getCurrentQuestion.selected" @change="SetAnswer" />
+                            <span class="radio"></span><span class="text">{{ option }}</span>
+                        </div>
                     </div>
                 </label>
             </div>
@@ -58,14 +55,14 @@
 
 <script>
 export default {
-  data () {
-    return {
-        questions2: '',
-    }
-  },
-  async mounted() {
-    this.questions2 = await $fetch('http://localhost:5001/tests/question/full')
-  },
+    data() {
+        return {
+            questions2: '',
+        }
+    },
+    async mounted() {
+        this.questions2 = await $fetch('http://localhost:5001/tests/question/full')
+    },
 }
 </script>
 

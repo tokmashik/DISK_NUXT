@@ -8,7 +8,7 @@
             <v-radio label="Не согласен" value="2"></v-radio>
             <v-radio label="Не знаю" value="3"></v-radio>
         </v-radio-group>
-        
+
     </div>
     <hr>
 </template>

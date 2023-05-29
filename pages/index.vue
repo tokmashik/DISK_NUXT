@@ -7,6 +7,7 @@
         </div>
         <NuxtLink to="/admin">admin</NuxtLink>
         <NuxtLink to="/user">user</NuxtLink>
+        <NuxtLink to="/LOGINGIT">LOGINGIT</NuxtLink>
       </v-container>
     </v-main>
   </v-app>

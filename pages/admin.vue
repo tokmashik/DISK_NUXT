@@ -56,6 +56,7 @@ export default {
 </script>
 <script setup>
 definePageMeta({
-  layout: 'admin'
+  layout: 'admin',
+  middleware: "auth"
 })
 </script>
