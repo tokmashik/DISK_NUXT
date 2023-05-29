@@ -11,6 +11,10 @@ export default defineNuxtConfig({
       ],
     }
   },
+   css: ['vuetify/lib/styles/main.sass',
+    '@mdi/font/css/materialdesignicons.css',
+    '@/assets/settings.scss',
+    '~/assets/css/main.css'],
   /*routeRules: {
     // Homepage pre-rendered at build time
     '/': { prerender: true },
@@ -36,13 +40,16 @@ export default defineNuxtConfig({
       ))
     }*/
   ],
- /* auth: {
+  /*auth: {
     enableGlobalAppMiddleware: true
   },*/
-  css: ['vuetify/lib/styles/main.sass',
-    '@mdi/font/css/materialdesignicons.css',
-    '@/assets/settings.scss',
-    '~/assets/css/main.css'],
+  runtimeConfig: {
+    GITHUB_CLIENT_SECRET: process.env.GITHUB_CLIENT_SECRET,
+    public: {
+      GITHUB_CLIENT_ID: process.env.GITHUB_CLIENT_ID,
+    },
+  },
+ 
   build: {
     transpile: ['vuetify'],
   },

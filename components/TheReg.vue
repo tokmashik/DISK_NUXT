@@ -14,7 +14,7 @@
             <!--<v-text-field v-model="password" color="primary" label="Пароль" placeholder="Enter your password"
                 variant="underlined"></v-text-field>-->
 
-            <p>Уже зарегистрированны в системе?</p>
+           <p>Уже зарегистрированны в системе?</p>
             <NuxtLink to="/login">Войти</NuxtLink>
         </v-container>
 

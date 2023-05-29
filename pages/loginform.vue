@@ -1,7 +1,6 @@
 <template>
     <v-card class="mx-auto" max-width="400" title="Войти в аккаунт">
         <v-container>
-            <LoginGit/>
             <v-text-field v-model="email" color="primary" label="Email" variant="underlined"></v-text-field>
 
             <v-text-field v-model="password" :append-icon="show1 ? 'mdi-eye' : 'mdi-eye-off'"
@@ -11,8 +10,7 @@
             <!--<v-text-field v-model="password" color="primary" label="Password" placeholder="Enter your password"
                 variant="underlined"></v-text-field>-->
 
-           <p>Ещё не зарегистрированны в системе?</p>
-            <NuxtLink to="/register">Зарегистрироваться</NuxtLink>
+          
         </v-container>
         <v-divider></v-divider>
         <v-card-actions>
